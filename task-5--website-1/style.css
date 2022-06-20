@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
+
+a,
+body,
+div,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+i,
+img,
+li,
+main,
+nav,
+p,
+span,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* --------------------- Header starts --------------------- */
+.header {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px 48px 8px 40px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+.header__logo {
+  float: left;
+}
+
+.header__logo img {
+  display: block;
+}
+
+.header__nav {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+li {
+  list-style: none;
+  margin-right: 30px;
+  display: inline-block;
+}
+
+li:last-child{
+    margin-right: 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+li a:hover {
+  color: #000000;
+}
+
+.header__btn {
+    margin-top: 5.5px;
+  float: right;
+}
+
+.header__btn button{
+  background-color: #2086fb;
+  padding: 12px 30px;
+  border: 0;
+  border-radius: 22px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+}
+/* --------------------- Header ends --------------------- */
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://i.ibb.co/K2TwqfS/hero-4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 568px;
+}
+
+.hero__search {
+  padding-top: 200px;
+}
+
+.hero__title {
+  margin-bottom: 24px;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.search__bar {
+  width: 75%;
+  border: 6px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.search__icon {
+  position: absolute;
+  top: 12.5px;
+  right: 20px;
+  color: #4a4a4a;
+  cursor: pointer;
+}
+
+.search__input {
+  border: 0;
+  width: 100%;
+  padding: 15px 0;
+  outline: none;
+  text-indent: 20px;
+  color: #9b9b9b;
+}
+/* --------------------- Banner ends --------------------- */
+
+/* --------------------- Main starts --------------------- */
+
+.box {
+  margin: 40px 14px 32px;
+  /* display: inline-block; */
+  /* overflow: hidden; */
+  /* clear: both; */
+}
+
+.box:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.box-card {
+  width: calc(100%/4);
+  padding: 52px 35px 60px;
+  float: left;
+  text-align: center;
+}
+
+.box-card__title {
+  font-size: 18px;
+  margin: 24px 0 10px;
+}
+
+.box-card__desc {
+  line-height: 26px;
+}
+
+.box-card:not(:nth-child(4n)) {
+  border-right: 1px solid #dcdcdc;
+}
+
+.box-card:not(:nth-child(-n + 4)) {
+  border-top: 1px solid #dcdcdc;
+}
+/* --------------------- Main ends --------------------- */
+
+
+/* --------------------- Footer starts --------------------- */
+.footer {
+  background-color: #323232;
+}
+
+.subfooter {
+    background-color: #323232;
+    padding: 64px 0 69px;
+    text-align: center;
+}
+
+.subfooter__title1 {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.subfooter__title2 {
+  margin: 4px 0 48px;
+  color: #ffffff;
+}
+
+.subfooter__btn {
+  background-color: #2086fb;
+  padding: 12px 40px;
+  border: 0;
+  border-radius: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.footer__copyright {
+  background-color: #252525;
+  padding: 27px 0 27px 40px;
+  position: relative;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: left;
+}
+
+.copyright__back-to-top {
+  background-color: #4a4a4a;
+  padding: 8px 12.25px;
+  position: absolute;
+  right: 44px;
+  bottom: 55px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.copyright__back-to-top a {
+  text-decoration: none;
+  color: #979797;
+}
+/* --------------------- Footer ends --------------------- */
