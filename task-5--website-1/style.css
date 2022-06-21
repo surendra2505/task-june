@@ -139,9 +139,8 @@ li a:hover {
 .search__input {
   border: 0;
   width: 100%;
-  padding: 15px 0;
+  padding: 15px 0 15px 20px;
   outline: none;
-  text-indent: 20px;
   color: #9b9b9b;
 }
 /* --------------------- Banner ends --------------------- */
@@ -155,7 +154,7 @@ li a:hover {
   /* clear: both; */
 }
 
-.box:after {
+.box:before ,.box:after {
     content: "";
     display: table;
     clear: both;
@@ -192,7 +191,7 @@ li a:hover {
   background-color: #323232;
 }
 
-.subfooter {
+.footer__subfooter {
     background-color: #323232;
     padding: 64px 0 69px;
     text-align: center;
