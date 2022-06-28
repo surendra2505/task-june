@@ -1,0 +1,383 @@
+a,
+article,
+body,
+button,
+div,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+i,
+input,
+img,
+li,
+main,
+nav,
+p,
+picture,
+section,
+span,
+textarea,
+ul {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: "Proxima Nova", sans-serif;
+}
+
+/* --------------------- utility classes --------------------- */
+.clear-fix::before,
+.clear-fix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.floating-width-50{
+  float: left;
+  width: calc(100% / 2);
+}
+
+/* --------------------- aboutus , timeline and hiring info's --------------------- */
+article p{
+  letter-spacing: 0.5px;
+  line-height: 26px;
+  font-size: 15px;
+}
+
+article h2{
+  letter-spacing: 1px;
+  line-height: 26px;
+  font-size: 28px;
+}
+
+article p:nth-child(2){
+  margin: 55px 0 16px;
+}
+
+
+/* --------------------- header --------------------- */
+.header {
+  padding: 30px 130px 30px 152px;
+}
+
+.header__brand {
+  float: left;
+  font-size: 20px;
+  color: #141720;
+}
+
+.header__navbar {
+  float: right;
+}
+
+.header__navbar ul {
+  padding-top: 4px;
+}
+
+.header__navbar li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.header__navbar li:last-child {
+  margin-right: 0;
+}
+
+li a {
+  letter-spacing: 0.5px;
+  color: #5d5f65;
+}
+
+/* --------------------- banner --------------------- */
+.banner {
+  padding: 200px 0 285px;
+  text-align: center;
+}
+
+.banner h1 {
+  letter-spacing: 1px;
+  font-size: 44px;
+  color: #141720;
+}
+
+.banner h2 {
+  letter-spacing: 0.5px;
+  line-height: 60px;
+  font-size: 25px;
+  color: #5d5f65;
+}
+
+/* --------------------- aboutus --------------------- */
+.aboutus__info {
+  height: 703px;
+  background-color: #141720;
+  padding: 144px 117px 0px;
+  color: #ffffff;
+}
+
+.aboutus__img img{
+  width: 100%;
+  height: 703px;
+  object-fit: cover;
+}
+
+/* --------------------- timeline text --------------------- */
+.timeline__map{
+  height: 700px;
+}
+
+.timeline__info {
+  height: 700px;
+  padding: 144px 117px 0px;
+  color: #5d5f65;
+}
+
+.timeline__title {
+  color: #2b2b2b;
+}
+
+
+/* --------------------- timeline track --------------------- */
+.timeline{
+  height: 700px;
+}
+
+.timeline__map {
+  position: relative;
+}
+
+.timeline__track{
+  position: absolute;
+  left: 35%;
+}
+
+.timeline__track li {
+  font-size: 15px;
+  line-height: 26px;
+  color: #141720;
+}
+
+.timeline__track li:first-child {
+  margin: 160px 0 60px;
+  color: #141720;
+}
+.timeline__track li:nth-child(3) {
+  margin: 80px 0 140px;
+}
+
+.year {
+  position: relative;
+  padding-right: 20px;
+  color: #d4d4d4;
+}
+.year-one {
+  color: #141720;
+}
+
+.year::after {
+  background-color: #ffffff;
+  width: 17px;
+  height: 17px;
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 49px;
+  border: 4px solid #d4d4d4;
+  border-radius: 50%;
+}
+
+.year-one::after {
+  border: 4px solid #c71222;
+}
+
+.info {
+  position: relative;
+  padding-left: 20px;
+}
+
+.info::before {
+  background-color: #d4d4d4;
+  width: 4px;
+  content: "";
+  position: absolute;
+  bottom: 20px;
+}
+
+.info-one:before {
+  top: -164px;
+  left: -3px;
+}
+
+.info-two:before {
+  top: -65px;
+  left: -4px;
+}
+
+.info-three:before {
+  top: -85px;
+  left: 0;
+}
+
+.info-four:before {
+  top: -144px;
+  left: 0;
+}
+
+/* --------------------- services --------------------- */
+.services {
+  background-color: #efefef;
+  padding: 140px 163px 140px 153px;
+}
+
+.services__title {
+  margin-bottom: 80px;
+  letter-spacing: 1px;
+  line-height: 26px;
+  font-size: 28px;
+  color: #2b2b2b;
+  text-align: center;
+}
+
+.service {
+  width: calc(100% / 3 - (90px / 3));
+  float: left;
+  margin-right: 45px;
+  text-align: justify;
+}
+
+.service:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.service:not(:nth-child(-n + 3)) {
+  margin-top: 70px;
+}
+
+.service img {
+  height: 40px;
+}
+
+.service h4 {
+  margin: 20px 0 16px;
+  line-height: 26px;
+  font-size: 20px;
+  color: #141720;
+}
+
+.service p {
+  letter-spacing: 0.5px;
+  line-height: 26px;
+  font-size: 15px;
+  color: #5d5f65;
+}
+
+/* --------------------- hiring --------------------- */
+.hiring__info {
+  height: 709px;
+  background-color: #141720;
+  padding: 144px 117px 0px;
+  color: #ffffff;
+}
+
+.hiring__img img{
+  width: 100%;
+  height: 709px;
+  object-fit: cover;
+}
+
+
+/* --------------------- contact --------------------- */
+.contact__img img{
+  width: 100%;
+  height: 699px;
+  object-fit: cover;
+}
+
+.contact__container {
+  background-color: #141720;
+  padding: 140px 0 194px 117px;
+  color: #ffffff;
+}
+
+.contact__title {
+  letter-spacing: 1px;
+  line-height: 26px;
+  font-size: 28px;
+}
+
+.contact__form {
+  max-width: 450px;
+  position: relative;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background-color: inherit;
+  padding: 10px 0;
+  width: 450px;
+  height: auto;
+  border-bottom: 1px solid #ffffff;
+  letter-spacing: 0.5px;
+  line-height: 26px;
+  font-size: 15px;
+  color: #ffffff;
+  caret-color: #ffffff;
+}
+
+textarea {
+  height: 220px;
+  padding-bottom: 70px;
+  overflow: hidden;
+  scroll-padding-bottom: 65px;
+}
+
+.name {
+  margin: 30px 0 20px;
+}
+
+.email {
+  margin-bottom: 20px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Proxima Nova", sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 26px;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.form__btn {
+  background-color: #c71222;
+  padding: 9px 49px 15px 46px;
+  position: absolute;
+  bottom: 25px;
+  right: 0;
+  border-radius: 100px;
+  color: #ffffff;
+}
